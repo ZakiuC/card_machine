@@ -9,12 +9,6 @@
 #define bitWrite(value, bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit)) // 根据bitvalue写入位状态
 
 // IO操作
-// #define set_data_pin(n)     (HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,n))
-// #define set_clk_pin(n)      (HAL_GPIO_WritePin(GPIOA,GPIO_PIN_3,n))
-// #define set_strobe_pin(n)   (HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,n))         //芯片选择
-// #define get_data_pin()      (HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_4))
-// #define set_data_pin_input()  {GPIOA->MODER&=~(3<<(4*2));GPIOA->MODER|=0<<4*2;}     //设置PA4输入模式
-// #define set_data_pin_output() {GPIOA->MODER&=~(3<<(4*2));GPIOA->MODER|=1<<4*2;}     //设置PA4输出模式
 static inline void set_data_pin(GPIO_PinState state)
 {
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, state);
@@ -335,5 +329,4 @@ void TM1639_Init(void)
  */
 void TM1639_Test(void)
 {
-	
 }

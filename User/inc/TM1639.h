@@ -2,22 +2,17 @@
 #define _TM1639_H_
 #include "main.h"
 
-
-
-
 typedef enum
 {
     TM1639_OFF = 0U,
     TM1639_ON
-} TM1639_Switch_e;        // TM1639开关变量
+} TM1639_Switch_e; // TM1639开关变量
 
 typedef enum
 {
     KEY_UP = 0U,
     KEY_DOWN
-} TM1639_KeyState_e;        // TM1639按键状态枚举
-
-
+} TM1639_KeyState_e; // TM1639按键状态枚举
 
 void TM1639_Clear(void);
 void TM1639_NumShow(uint8_t nums[], uint8_t dots[], uint8_t length);

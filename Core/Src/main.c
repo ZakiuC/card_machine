@@ -59,7 +59,7 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t showNum[5][5] = {{1, 2, 3, 4, 5}, {5, 1, 2, 3, 4}, {4, 5, 1, 2, 3}, {3, 4, 5, 1, 2}, {2, 3, 4, 5, 1}};
-uint8_t showDot[5] = {0,0,0,0,0};
+uint8_t showDot[5] = {0, 0, 0, 0, 0};
 GPIO_PinState power_key = GPIO_PIN_SET;
 GPIO_PinState touch_key = GPIO_PIN_SET;
 
@@ -116,9 +116,9 @@ int main(void)
         key_value = TM1639_ReadKey();
         for (uint8_t j = 0; j < 5; j++)
         {
-            if(parse_key_status(key_value, j+1) == KEY_DOWN)
+            if (parse_key_status(key_value, j + 1) == KEY_DOWN)
             {
-                LOG_DEBUG("key[%d] down\n", j+1);
+                LOG_DEBUG("key[%d] down\n", j + 1);
             }
         }
         /* USER CODE BEGIN 3 */
