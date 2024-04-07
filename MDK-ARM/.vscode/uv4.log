@@ -1,0 +1,56 @@
+Load "card_machine\\card_machine.axf" 
+Set JLink Project File to "d:\zakiu\Code\stm32g0_WorkSpace\card_machine\MDK-ARM\JLinkSettings.ini"* JLink Info: Device "STM32G030K6" selected.
+
+JLink info:
+------------
+DLL: V7.96c, compiled Apr  2 2024 12:30:42
+Firmware: J-Link V9 compiled May  7 2021 16:26:12
+Hardware: V9.20
+Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash 
+
+* JLink Info: InitTarget() start
+* JLink Info: SWD selected. Executing JTAG -> SWD switching sequence.
+* JLink Info: DAP initialized successfully.
+* JLink Info: InitTarget() end - Took 11.9ms
+* JLink Info: Found SW-DP with ID 0x0BC11477
+* JLink Info: DPIDR: 0x0BC11477
+* JLink Info: CoreSight SoC-400 or earlier
+* JLink Info: Scanning AP map to find all available APs
+* JLink Info: AP[1]: Stopped AP scan as end of AP map has been reached
+* JLink Info: AP[0]: AHB-AP (IDR: 0x04770031)
+* JLink Info: Iterating through AP map to find AHB-AP to use
+* JLink Info: AP[0]: Core found
+* JLink Info: AP[0]: AHB-AP ROM base: 0xF0000000
+* JLink Info: CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+* JLink Info: Found Cortex-M0 r0p1, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: CoreSight components:
+* JLink Info: ROMTbl[0] @ F0000000
+* JLink Info: [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+* JLink Info: ROMTbl[1] @ E00FF000
+* JLink Info: [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+* JLink Info: [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+* JLink Info: [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+ROMTableAddr = 0xF0000000
+* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.
+* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.
+
+Target info:
+------------
+Device: STM32G030K6Tx
+VTarget = 3.304V
+State of Pins: TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+
+* JLink Info: Memory map 'after startup completion point' is active
+Erase Done.Programming Done.Verify OK.* JLink Info: Memory map 'before startup completion point' is active
+* JLink Info: Reset: Halt core after reset via DEMCR.VC_CORERESET.
+* JLink Info: Reset: Reset device via AIRCR.SYSRESETREQ.
+* JLink Info: Memory map 'after startup completion point' is active
+Application running ...
+* JLink Info: OnDisconnectTarget() start
+* JLink Info: OnDisconnectTarget() end - Took 823us
+Flash Load finished at 17:23:39
