@@ -7,12 +7,12 @@ card_machine/stm32g0xx_it.o: ..\Core\Src\stm32g0xx_it.c \
   ..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h \
   ..\Drivers\CMSIS\Include\core_cm0plus.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h \
-  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\Drivers\CMSIS\Include\cmsis_version.h \
-  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\Drivers\CMSIS\Include\cmsis_compiler.h \
-  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\Drivers\CMSIS\Include\cmsis_armclang.h \
+  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\ _freertos\Drivers\CMSIS\Include\cmsis_version.h \
+  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\ _freertos\Drivers\CMSIS\Include\cmsis_compiler.h \
+  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\ _freertos\Drivers\CMSIS\Include\cmsis_armclang.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\arm_compat.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\arm_acle.h \
-  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\Drivers\CMSIS\Include\mpu_armv7.h \
+  d:\zakiu\Code\stm32g0_WorkSpace\card_machine\ _freertos\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h \
@@ -33,4 +33,7 @@ card_machine/stm32g0xx_it.o: ..\Core\Src\stm32g0xx_it.c \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h \
-  ..\Core\Inc\stm32g0xx_it.h
+  ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h \
+  ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h \
+  ..\Core\Inc\stm32g0xx_it.h ..\User\inc\console.h ..\User\inc\bsp_key.h \
+  ..\User\inc\TM1639.h

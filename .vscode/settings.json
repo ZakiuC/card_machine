@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "tm1639.h": "c"
+        "tm1639.h": "c",
+        "main.h": "c",
+        "task.h": "c"
     }
 }

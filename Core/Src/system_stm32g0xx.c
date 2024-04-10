@@ -22,7 +22,7 @@
   *   Then SystemInit() function is called, in "startup_stm32g0xx.s" file, to
   *   configure the system clock before to branch to main program.
   *
-  *   This file configures the system clock as follows:
+  *   This file configures the system clock as follows:																																									
   *=============================================================================
   *-----------------------------------------------------------------------------
   *        System Clock source                    | HSI

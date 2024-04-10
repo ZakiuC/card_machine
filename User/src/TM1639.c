@@ -1,5 +1,7 @@
 #include "TM1639.h"
 #include "gpio.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 // 操作单个位命令
 #define bitSet(value, bit) ((value) |= (1UL << (bit)))											// 设置位
@@ -29,7 +31,13 @@ static inline GPIO_PinState get_data_pin()
 // 按键掩码，用于标识TM1639模块上不同按键的位置
 static uint16_t key_mask[5] = {12, 11, 16, 15, 4};
 uint8_t data[2] = {0};
-
+static uint16_t TM1639Key_Value = 0;
+static uint8_t start_hooking = 0;
+static TM1639Key_inf_t	tm1639key_info[TM1639KEY_AMOUNT] = {{TM1639KEY_RANDOM, TM1639KEY_NULL, 1, 0, 0},
+												{TM1639KEY_ADD, TM1639KEY_NULL, 1, 0, 0},
+												{TM1639KEY_SUB, TM1639KEY_NULL, 1, 0, 0},
+												{TM1639KEY_SETTING, TM1639KEY_NULL, 1, 0, 0},
+												{TM1639KEY_LAUNCH, TM1639KEY_NULL, 1, 0, 0}};
 /**
  * @brief 设置数据引脚模式
  *
@@ -51,7 +59,14 @@ static void set_data_pin_mode(GPIO_PinState mode)
  */
 void TM1639_Delay(uint8_t count)
 {
-	HAL_Delay(count);
+	for(uint8_t i=0;i < count; i++)
+	{
+		__NOP();
+        __NOP();
+        __NOP();
+        __NOP();
+        __NOP();
+	}
 }
 
 /**
@@ -61,6 +76,7 @@ void TM1639_Delay(uint8_t count)
  */
 static void TM1639_WriteByte(uint8_t data)
 {
+	start_hooking = 0;
 	// 逐位发送数据，从最低位开始
 	for (uint8_t i = 0; i < 8; i++)
 	{
@@ -70,27 +86,9 @@ static void TM1639_WriteByte(uint8_t data)
 		set_clk_pin(1);			// 时钟线拉高，完成这一位数据的发送
 		TM1639_Delay(1);
 	}
+	start_hooking = 1;
 }
 
-// static void TM1639_ReadByte(void)
-// {
-// 	unsigned char i, data, temp = 0;
-
-//     // 配置DIO为输入，准备读取数据
-//     set_data_pin(1);
-//     for (i = 0; i < 8; i++)
-//     {
-//         temp >>= 1;                                                      // 为下一位数据腾出位置
-//         set_clk_pin(0);                                              // 下降沿准备读取数据
-//         data = HAL_GPIO_ReadPin(tm1639Din_GPIO_Port, tm1639Din_Pin); // 从DIN读取一位数据
-//         if (data)
-// 		{
-//             temp |= 0x80;  // 如果读取到1，则设置相应位
-// 		}
-//         set_clk_pin(1); // 上升沿完成读取
-//     }
-//     return temp; // 返回读取到的数据
-// }
 
 /**
  * @brief 发送数据
@@ -100,10 +98,12 @@ static void TM1639_WriteByte(uint8_t data)
  */
 static void TM1639_WriteData(uint8_t address, uint8_t data)
 {
+	start_hooking = 0;
 	set_strobe_pin(0);
 	TM1639_WriteByte(0x00 | address);
 	TM1639_WriteByte(data);
 	set_strobe_pin(1);
+	start_hooking = 1;
 }
 
 /**
@@ -170,8 +170,95 @@ static uint8_t getDigitCode(uint8_t num)
 		0x07, // 7
 		0x7F, // 8
 		0x6F, // 9
+		0x00, // 10（不显示）
 	};
 	return digitCode[num];
+}
+
+/**
+ * @brief 获取字母编码
+ *
+ * @param letter 字母
+ * @return uint8_t 数字编码
+ */
+static uint8_t getLetterCode(char letter)
+{
+	uint8_t index = 0;
+    // 大写字母编码
+    const uint8_t letterToSegmentUpperCase[26] = {
+        0x77, // A
+        0x7F, // B
+        0x27, // C
+        0x3F, // D
+        0x79, // E
+        0x71, // F
+        0x5E, // G
+        0x76, // H
+        0x06, // I
+        0x1E, // J
+        0x80, // K无法准确显示
+		0x38, // L
+		0x80, // M无法准确显示
+		0x80, // N无法准确显示
+		0x3F, // O
+		0x73, // P
+		0x67, // Q
+		0x33, // R, 仿照但不完美
+		0x6D, // S
+		0x31, // T, 仿照但不完美
+		0x3E, // U
+		0x80, // V无法准确显示
+		0x80, // W无法准确显示
+		0x80, // X无法准确显示
+		0x6E, // Y
+		0x5B  // Z
+	};
+
+	// 小写字母编码（示例，可以根据实际情况修改）
+    const uint8_t letterToSegmentLowerCase[26] = {
+        0x77, // a
+        0x7F, // b
+        0x27, // c
+        0x5E, // d
+        0x79, // e
+        0x47, // f
+        0x5E, // g
+        0x76, // h
+        0x06, // i
+        0x1E, // j
+        0x80, // k无法准确显示
+		0x38, // l
+		0x80, // m无法准确显示
+		0x80, // n无法准确显示
+		0x3F, // o
+		0x73, // p
+		0x67, // q
+		0x33, // r, 仿照但不完美
+		0x6D, // s
+		0x31, // t, 仿照但不完美
+		0x3E, // u
+		0x80, // v无法准确显示
+		0x80, // w无法准确显示
+		0x80, // x无法准确显示
+		0x6E, // y
+		0x5B  // z
+    };
+
+	if (letter >= 'A' && letter <= 'Z') {
+        index = letter - 'A';
+        return letterToSegmentUpperCase[index];
+    }
+    else if (letter >= 'a' && letter <= 'z') {
+        index = letter - 'a';
+        return letterToSegmentLowerCase[index];
+    }
+    else if (letter == '-') {
+        return 0x40; // “-”的编码
+    }
+    else {
+        // 不是字母
+        return 0;
+    }
 }
 
 /**
@@ -179,26 +266,103 @@ static uint8_t getDigitCode(uint8_t num)
  *
  * @param nums 数字数组
  * @param dots 小数点数组
+ * @param start_pos 刷新起始位置
  * @param length 数组长度
  */
-void TM1639_NumShow(uint8_t nums[], uint8_t dots[], uint8_t length)
+void TM1639_NumShow(uint8_t nums[], uint8_t dots[], uint8_t start_pos, uint8_t length)
+{
+	const uint8_t pos_base = 0xC0; // 命令字节的基地址
+	uint8_t index = start_pos;
+
+	// 填充数字编码并发送
+	for (uint8_t i = start_pos; i < (start_pos + length); i++)
+	{
+		index = i - start_pos;
+		// 获取数字编码并设置小数点
+		uint8_t data = getDigitCode(nums[index]) | (dots[index] ? 0x80 : 0x00);
+		// MARK: 3和4的位置调整以符合硬件位置
+		index = (i == 3) ? 4 : (i == 4) ? 3 : i;
+		// 发送数字编码到TM1639
+		TM1639_WriteData(pos_base + index * 2, data & 0x0F);   // 发送低4位
+		TM1639_WriteData(pos_base + index * 2 + 1, data >> 4); // 发送高4位
+	}
+
+	// 更新显示命令，以应用显示内容和亮度设置
+	TM1639_WriteCmd(0x40); // 写数据到显示寄存器,自动地址增加
+	TM1639_WriteCmd(0x8A); // 显示控制,设置脉冲宽度为4/16
+}
+
+/**
+ * @brief 更新TM1639显示字母内容
+ *
+ * @param texts 字母数组
+ * @param textLength 字母数组长度
+ * @param dots 小数点数组
+ */
+void TM1639_LetterShow(char texts[], uint8_t length, uint8_t dots[])
 {
 	const uint8_t pos_base = 0xC0; // 命令字节的基地址
 	uint8_t index = 0;
 
-	// 填充数字编码并发送
+	// 填充字母编码并发送
 	for (uint8_t i = 0; i < length; i++)
 	{
 		// MARK: 3和4的位置调整以符合硬件位置
-		index = (i == 3) ? 4 : (i == 4) ? 3
-										: i;
+		index = (i == 3) ? 4 : (i == 4) ? 3 : i;
 
 		// 获取数字编码并设置小数点
-		uint8_t data = getDigitCode(nums[index]) | (dots[index] ? 0x80 : 0x00);
+		uint8_t data = getLetterCode(texts[index]) | (dots[index] ? 0x80 : 0x00);
 
 		// 发送数字编码到TM1639
 		TM1639_WriteData(pos_base + i * 2, data & 0x0F);   // 发送低4位
 		TM1639_WriteData(pos_base + i * 2 + 1, data >> 4); // 发送高4位
+	}
+
+	// 更新显示命令，以应用显示内容和亮度设置
+	TM1639_WriteCmd(0x40); // 写数据到显示寄存器,自动地址增加
+	TM1639_WriteCmd(0x8A); // 显示控制,设置脉冲宽度为4/16
+}
+
+/**
+ * @brief 更新TM1639显示字母加符号内容
+ *
+ * @param texts 字母数组
+ * @param textLength 字母数组长度
+ * @param nums 数字数组
+ * @param numsLength 数字数组长度
+ * @param dots 小数点数组
+ */
+void TM1639_RemixShow(char texts[], uint8_t textLength, uint8_t nums[], uint8_t numsLength, uint8_t dots[])
+{
+	const uint8_t pos_base = 0xC0; // 命令字节的基地址
+	uint8_t index = 0;
+
+	// 填充字母编码并发送
+	for (uint8_t i = 0; i < textLength; i++)
+	{
+		// MARK: 3和4的位置调整以符合硬件位置
+		index = (i == 3) ? 4 : (i == 4) ? 3 : i;
+
+		// 获取数字编码并设置小数点
+		uint8_t data = getLetterCode(texts[index]) | (dots[index] ? 0x80 : 0x00);
+
+		// 发送数字编码到TM1639
+		TM1639_WriteData(pos_base + index * 2, data & 0x0F);   // 发送低4位
+		TM1639_WriteData(pos_base + index * 2 + 1, data >> 4); // 发送高4位
+	}
+
+	// 填充数字编码并发送
+	for (uint8_t i = textLength; i < textLength + numsLength; i++)
+	{
+		// MARK: 3和4的位置调整以符合硬件位置
+		index = i - textLength;
+		// 获取数字编码并设置小数点
+		uint8_t data = getDigitCode(nums[index]) | (dots[index] ? 0x80 : 0x00);
+		index += textLength;
+		index = (index == 3) ? 4 : (index == 4) ? 3 : index;
+		// 发送数字编码到TM1639
+		TM1639_WriteData(pos_base + index * 2, data & 0x0F);   // 发送低4位
+		TM1639_WriteData(pos_base + index * 2 + 1, data >> 4); // 发送高4位
 	}
 
 	// 更新显示命令，以应用显示内容和亮度设置
@@ -229,7 +393,7 @@ void TM1639_SetDisplayState(TM1639_Switch_e state)
 }
 
 /**
- * @brief 控制显示器电源开关
+ * @brief 控制显示器电源开关	
  *
  * @param PinState TM1639_ON: 开启显示器电源 TM1639_OFF: 关闭显示器
  */
@@ -284,7 +448,7 @@ uint16_t TM1639_ReadKey(void)
 			key_value |= (1 << i); // 设置对应按键的位
 		}
 	}
-	return key_value; // 返回解析后的按键值
+	return key_value; // 返回解析后的按键值		
 }
 /**
  * @brief 解析指定按键的状态
@@ -298,11 +462,11 @@ TM1639_KeyState_e parse_key_status(uint16_t key_value, uint8_t key_number)
 	// 检查指定按键是否被按下
 	if (((1 << (key_number - 1)) & key_value) == 0)
 	{
-		return KEY_UP;
+		return TM1639_KEY_DOWN;
 	}
 	else
 	{
-		return KEY_DOWN;
+		return TM1639_KEY_UP;
 	}
 }
 
@@ -310,9 +474,18 @@ TM1639_KeyState_e parse_key_status(uint16_t key_value, uint8_t key_number)
  * @brief 初始化TM1639
  *
  * @param void
- */
+ */               
 void TM1639_Init(void)
 {
+    uint8_t key_i = 0;
+
+    for (key_i = 0; key_i < TM1639KEY_AMOUNT; key_i++)
+    {
+        tm1639key_info[key_i].key_state = TM1639KEY_NULL;
+        tm1639key_info[key_i].key_en = 1;
+        tm1639key_info[key_i].key_delay = 0;
+        tm1639key_info[key_i].key_step = 0;
+    }
 	set_data_pin_mode(GPIO_PIN_SET);
 	set_strobe_pin(1);
 	set_clk_pin(1);
@@ -322,8 +495,117 @@ void TM1639_Init(void)
 	TM1639_WriteCmd(0x87); // 1000 0111	显示控制,设置脉冲宽度为14/16
 
 	TM1639_Clear();
+	start_hooking = 1;
 }
 
+
+static uint8_t Key_GetPortState(TM1639Key_e key_id)
+{
+	return parse_key_status(TM1639Key_Value, key_id + 1);
+}
+
+void TM1639_KeyScan(void)
+{
+    uint8_t key_i = 0;
+
+    for (key_i = 0; key_i < TM1639KEY_AMOUNT; key_i++)
+    {
+        switch (tm1639key_info[key_i].key_step)
+        {
+        case 0:
+            if (Key_GetPortState(key_i) == 0)
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_CLICK;
+                tm1639key_info[key_i].key_step = 2;
+            }
+            else
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_NULL;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            break;
+        case 1:
+            break;
+        case 2:
+            if (Key_GetPortState(key_i) == 1)
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_UP;
+                tm1639key_info[key_i].key_step = 0;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            else
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_DOWN;
+                tm1639key_info[key_i].key_step = 4;
+                tm1639key_info[key_i].key_delay = TM1639KEY_LONG_PRESS_TIME_2S;
+                tm1639key_info[key_i].key_en = ENABLE;
+            }
+            break;
+        case 4:
+            if ((tm1639key_info[key_i].key_delay == 0) && (Key_GetPortState(key_i) == 0))
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_LONG_2S;
+                tm1639key_info[key_i].key_step = 5;
+            }
+            if (Key_GetPortState(key_i) == 1)
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_UP;
+                tm1639key_info[key_i].key_step = 0;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            break;
+        case 5:
+            if ((tm1639key_info[key_i].key_delay == 0) && (Key_GetPortState(key_i) == 0))
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_LONG_4S;
+                tm1639key_info[key_i].key_step = 6;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            if (Key_GetPortState(key_i) == 1)
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_NULL;
+                tm1639key_info[key_i].key_step = 0;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            break;
+        case 6:
+            if (Key_GetPortState(key_i) == 1)
+            {
+                tm1639key_info[key_i].key_state = TM1639KEY_NULL;
+                tm1639key_info[key_i].key_step = 0;
+                tm1639key_info[key_i].key_en = DISABLE;
+            }
+            break;
+        }
+    }
+}
+
+
+
+void TM1639_msHandle(void)
+{
+	static uint8_t check_key_delay = 0;
+	if (check_key_delay > 5)
+	{
+		
+		TM1639Key_Value = TM1639_ReadKey();
+		check_key_delay = 0;
+	}
+	
+    for (uint8_t i = 0; i < TM1639KEY_AMOUNT; i++)
+    {
+        if (tm1639key_info[i].key_delay > 0)
+        {
+            tm1639key_info[i].key_delay--;
+        }
+    }
+	check_key_delay += start_hooking;
+}
+
+const TM1639Key_inf_t *GetTM1639KeyInfo(void)
+{
+    return tm1639key_info;
+}
 /**
  * @brief TM1639测试函数，测试使用
  */

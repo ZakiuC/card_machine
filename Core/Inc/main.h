@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+typedef enum { false, true } bool;
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "tm1639.h": "c",
-        "main.h": "c"
-    }
+        "main.h": "c",
+        "console.h": "c",
+        "bsp_key.h": "c",
+        "stm32g0xx_hal.h": "c",
+        "log.h": "c",
+        "timers.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
