@@ -39,4 +39,14 @@ card_machine/console.o: ..\User\src\console.c ..\User\inc\console.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\string.h ..\User\inc\log.h \
   ..\SeggerRTT\SEGGER_RTT.h ..\SeggerRTT\SEGGER_RTT_Conf.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h \
-  D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h
+  D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h ..\User\inc\motor.h \
+  ..\Core\Inc\adc.h ..\User\inc\flash_operation.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
+  ..\Core\Inc\FreeRTOSConfig.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h

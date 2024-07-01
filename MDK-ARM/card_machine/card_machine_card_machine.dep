@@ -1,15 +1,15 @@
 Dependencies for Project 'card_machine', Target 'card_machine': (DO NOT MODIFY !)
 CompilerVersion: 6210000::V6.21::ARMCLANG
 F (startup_stm32g030xx.s)(0x66161EEF)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -I ../Core/Inc-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G030xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o card_machine/startup_stm32g030xx.o)
-F (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)()
+F (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)()
 F (../Core/Src/main.c)(0x6616011F)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/main.o -MD)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x660CF42D)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -33,7 +33,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -41,7 +41,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -54,14 +54,14 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h)(0x660CF41F)
 I (..\Core\Inc\adc.hi.\Core\Inc\dma.hS.\Core\Inc\gpio.h)(0x00000000)
-F (../Core/Src/gpio.c)(0x6615F6DD)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/gpio.o -MD)
+F (../Core/Src/gpio.c)(0x667904BF)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/gpio.o -MD)
 I (..\Core\Inc\main.hd.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -85,7 +85,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -95,7 +95,7 @@ F (../Core/Src/app_freertos.c)(0x6615FF76)(-xc -std=gnu11 --target=arm-arm-none-
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -108,8 +108,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_armclang.h)(0x660CF41F)
@@ -131,7 +131,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -142,14 +142,14 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h)(0x660CF41F)
-F (../Core/Src/adc.c)(0x661136A6)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/adc.o -MD)
+F (../Core/Src/adc.c)(0x667A6FEC)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/adc.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -173,20 +173,20 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
-F (../Core/Src/dma.c)(0x6615F6DE)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/dma.o -MD)
+F (../Core/Src/dma.c)(0x661775F1)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/dma.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -210,7 +210,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -222,8 +222,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -247,22 +247,22 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
 I (..\Core\Inc\stm32g0xx_it.hr.\User\inc\console.ha.\User\inc\bsp_key.h)(0x00000000)
-I (..\User\inc\TM1639.h)(0x6615EEAB)
+I (..\User\inc\TM1639.h)(0x663D719E)
 F (../Core/Src/stm32g0xx_hal_msp.c)(0x6615F6DE)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/stm32g0xx_hal_msp.o -MD)
 I (..\Core\Inc\main.h0.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -286,7 +286,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -298,8 +298,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -323,58 +323,20 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
-F (..\User\src\card_machine.c)(0x661385CB)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/card_machine.o -MD)
-I (..\User\inc\card_machine.h)(0x66137C6D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x660CF42D)
-I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
-I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
-I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
-I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_armclang.h)(0x660CF41F)
-I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
-I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\mpu_armv7.h)(0x660CF41F)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x660CF42D)
-I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_rcc.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dma.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dmamux.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_cortex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
-F (..\User\src\console.c)(0x66165DA0)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/console.o -MD)
+F (..\User\src\console.c)(0x667E831D)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/console.o -MD)
 I (..\Core\Inc\main.he.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -398,7 +360,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -409,14 +371,25 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\string.hh\User\inc\log.h)(0x00000000)
 I (..\SeggerRTT\SEGGER_RTT.hL.\SeggerRTT\SEGGER_RTT_Conf.h)(0x00000000)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
-F (..\User\src\user_task.c)(0x66164FA6)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/user_task.o -MD)
-I (..\Core\Inc\main.ha.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
+I (..\Core\Inc\adc.hA.\User\inc\flash_operation.h)(0x00000000)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x660CF41F)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x660CF41F)
+F (..\User\src\flash_operation.c)(0x667E6CEC)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/flash_operation.o -MD)
+I (..\User\inc\flash_operation.h)(0x667904BF)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x660CF42D)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -440,7 +413,44 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
+F (..\User\src\user_task.c)(0x667BE04C)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/user_task.o -MD)
+I (..\Core\Inc\main.ha.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
+I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_armclang.h)(0x660CF41F)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\mpu_armv7.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x660CF42D)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_rcc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dma.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dmamux.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_cortex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -448,7 +458,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -464,15 +474,16 @@ I (..\User\inc\log.hi.\SeggerRTT\SEGGER_RTT.h)(0x00000000)
 I (..\SeggerRTT\SEGGER_RTT_Conf.h)(0x660BE11F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
-I (..\User\inc\bsp_key.hA.\User\inc\console.h)(0x00000000)
-F (..\User\src\TM1639.c)(0x6616547E)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/tm1639.o -MD)
+I (..\User\inc\bsp_key.hA.\User\inc\console.hr.\Core\Inc\gpio.h)(0x00000000)
+I (..\User\inc\test_key.h)(0x66386640)
+F (..\User\src\TM1639.c)(0x667904BF)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/tm1639.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -496,7 +507,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -504,7 +515,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
 I (..\Core\Inc\gpio.h)(0x661136A6)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -512,14 +523,18 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x660CF41F)
-F (..\User\src\bsp_key.c)(0x6614AD01)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/bsp_key.o -MD)
+I (..\User\inc\log.hi.\SeggerRTT\SEGGER_RTT.h)(0x00000000)
+I (..\SeggerRTT\SEGGER_RTT_Conf.h)(0x660BE11F)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
+F (..\User\src\bsp_key.c)(0x6660087D)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/bsp_key.o -MD)
 I (..\Core\Inc\main.hy.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -543,20 +558,62 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
+I (..\User\inc\log.h0.\SeggerRTT\SEGGER_RTT.h)(0x00000000)
+I (..\SeggerRTT\SEGGER_RTT_Conf.h)(0x660BE11F)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
+F (..\User\src\motor.c)(0x66820068)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/motor.o -MD)
+I (..\Core\Inc\main.hc.\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x00000000)
+I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_armclang.h)(0x660CF41F)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
+I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\mpu_armv7.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x660CF42D)
+I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_rcc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dma.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_dmamux.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_cortex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
+I (..\Core\Inc\gpio.h)(0x661136A6)
 F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.c)(0x660CF42D)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/stm32g0xx_hal_adc.o -MD)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h)(0x660CF42D)
 I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -580,7 +637,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -592,8 +649,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -617,7 +674,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -630,8 +687,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -655,7 +712,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -667,8 +724,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -692,7 +749,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -705,8 +762,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -730,7 +787,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -742,8 +799,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -767,7 +824,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -779,8 +836,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -804,7 +861,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -816,8 +873,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -841,7 +898,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -853,8 +910,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -878,7 +935,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -891,8 +948,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -916,7 +973,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -928,8 +985,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -953,7 +1010,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -965,8 +1022,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -990,7 +1047,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1002,8 +1059,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -1027,7 +1084,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1039,8 +1096,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -1064,7 +1121,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1076,8 +1133,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -1101,7 +1158,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1113,8 +1170,8 @@ I (..\Core\Inc\stm32g0xx_hal_conf.h)(0x6615F6DF)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h)(0x660CF42D)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -1138,7 +1195,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1146,8 +1203,8 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_tim_ex.h)(0x660CF42D)
 F (../Core/Src/system_stm32g0xx.c)(0x6615FB31)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ../SeggerRTT -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0-I./RTE/_card_machine-ID:/Users/zakiu/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Users/zakiu/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o card_machine/system_stm32g0xx.o -MD)
 I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x660CF42D)
-I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x660CF41F)
+I (..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h)(0x6629F1F9)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x667904BF)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_version.h)(0x660CF41F)
 I (d:\zakiu\Code\stm32g0_WorkSpace\card_machine _freertos\Drivers\CMSIS\Include\cmsis_compiler.h)(0x660CF41F)
@@ -1175,7 +1232,7 @@ I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_adc.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_adc_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h)(0x660CF42D)
-I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x660CF42D)
+I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h)(0x66600FCA)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h)(0x660CF42D)
 I (..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h)(0x660CF42D)
@@ -1196,7 +1253,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x660CF41F)(-xc -std=g
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1210,7 +1267,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1225,7 +1282,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1238,7 +1295,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\string.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1252,7 +1309,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\string.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1267,7 +1324,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\string.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1282,7 +1339,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1298,7 +1355,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1316,7 +1373,7 @@ I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)
@@ -1328,7 +1385,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c)(0x66
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x660CF41F)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
 I (D:\UserApps\Keil\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x66162381)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x661CD725)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x660CF41F)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x660CF41F)

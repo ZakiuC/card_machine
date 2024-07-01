@@ -53,4 +53,5 @@ card_machine/user_task.o: ..\User\src\user_task.c ..\User\inc\user_task.h \
   ..\SeggerRTT\SEGGER_RTT_Conf.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\stdlib.h \
   D:\UserApps\Keil\ARM\ARMCLANG\include\stdarg.h ..\User\inc\TM1639.h \
-  ..\User\inc\bsp_key.h ..\User\inc\console.h
+  ..\User\inc\bsp_key.h ..\User\inc\console.h ..\Core\Inc\gpio.h \
+  ..\User\inc\test_key.h

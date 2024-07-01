@@ -6,7 +6,11 @@
         "bsp_key.h": "c",
         "stm32g0xx_hal.h": "c",
         "log.h": "c",
-        "timers.h": "c"
+        "timers.h": "c",
+        "gpio.h": "c",
+        "freertos.h": "c",
+        "__config": "c",
+        "0.96iicver64x128.C": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
 }

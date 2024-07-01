@@ -548,14 +548,14 @@
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
-              <FileName>card_machine.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\src\card_machine.c</FilePath>
-            </File>
-            <File>
               <FileName>console.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\src\console.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash_operation.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\src\flash_operation.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -581,6 +581,11 @@
               <FileName>bsp_key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\src\bsp_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\src\motor.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -2419,7 +2419,7 @@ typedef struct
 #define FLASH_CR_OBL_LAUNCH_Pos                (27U)
 #define FLASH_CR_OBL_LAUNCH_Msk                (0x1UL << FLASH_CR_OBL_LAUNCH_Pos) /*!< 0x08000000 */
 #define FLASH_CR_OBL_LAUNCH                    FLASH_CR_OBL_LAUNCH_Msk
-#define FLASH_CR_OPTLOCK_Pos                   (30U)
+#define FLASH_CR_OPTLOCK_Pos                   (30U) 
 #define FLASH_CR_OPTLOCK_Msk                   (0x1UL << FLASH_CR_OPTLOCK_Pos)    /*!< 0x40000000 */
 #define FLASH_CR_OPTLOCK                       FLASH_CR_OPTLOCK_Msk
 #define FLASH_CR_LOCK_Pos                      (31U)

@@ -693,7 +693,7 @@ typedef struct
   #define NVIC_SetPriorityGrouping    __NVIC_SetPriorityGrouping
   #define NVIC_GetPriorityGrouping    __NVIC_GetPriorityGrouping
   #define NVIC_EnableIRQ              __NVIC_EnableIRQ
-  #define NVIC_GetEnableIRQ           __NVIC_GetEnableIRQ
+  #define NVIC_GetEnableIRQ           __NVIC_GetEnableIRQ4
   #define NVIC_DisableIRQ             __NVIC_DisableIRQ
   #define NVIC_GetPendingIRQ          __NVIC_GetPendingIRQ
   #define NVIC_SetPendingIRQ          __NVIC_SetPendingIRQ

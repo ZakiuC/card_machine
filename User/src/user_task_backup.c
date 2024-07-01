@@ -30,11 +30,13 @@ TaskHandle_t Work_TaskHandle;
 TaskHandle_t Console_TaskHandle;
 TaskHandle_t Test_TaskHandle;
 
+
 /* 函数声明 ------------------------------------------------------------------*/
 static void TM1639_task(void *pvParameters);
 static void Console_task(void *pvParameters);
 static void Work_task(void *pvParameters);
 static void Test_task(void *pvParameters);
+
 
 static void CreateTask(TaskFunction_t task, const char *name, uint16_t stackSize, TaskHandle_t *taskHandle);
 static void vTimerCallback(TimerHandle_t xTimer);
@@ -62,16 +64,16 @@ void StartDefaultTask(void *argument)
     // CreateTask(Work_task, "WorkTask", CONSOLE_TASK_STACK, &Console_TaskHandle);
     CreateTask(Console_task, "ConsoleTask", CONSOLE_TASK_STACK, &Console_TaskHandle);
     CreateTask(Test_task, "TestTask", TEST_TASK_STACK, &Test_TaskHandle);
+    
 
     if (xTimer != NULL)
     {
         if (xTimerStart(xTimer, 0) != pdPASS)
         {
             LOG_ERROR("Timer 0 start failed\n");
-        }   
+        }
     }
 
-    //
     for (;;)
     {
         vTaskDelay(pdMS_TO_TICKS(START_TASK_PERIOD));
@@ -88,11 +90,11 @@ static void TM1639_task(void *pvParameters)
     (void)pvParameters;
     for (;;)
     {
-        if (displayInfo.needUpdate)
+        if (displayInfo.needUpdate) 
         {
             switch (displayInfo.content_type)
             {
-            case DIGITAL_CONTENT:
+            case DIGITAL_CONTENT:    
                 TM1639NumShow(displayInfo.digital_content, displayInfo.dot_content, displayInfo.start_pos, displayInfo.length);
                 break;
             case STRING_CONTENT:
@@ -123,9 +125,9 @@ static void Console_task(void *pvParameters)
     (void)pvParameters;
     for (;;)
     {
-        KeyScan();           // 按键扫描
-        TM1639KeyScan();     // TM1639按键扫描
-        ConsoleModeSwitch(); // 更新运行模式
+        KeyScan(); // 按键扫描
+        TM1639KeyScan();   // TM1639按键扫描
+        ConsoleModeSwitch();   // 更新运行模式
 
         vTaskDelay(pdMS_TO_TICKS(CONSOLE_TASK_PERIOD));
     }
@@ -154,7 +156,7 @@ void printSystemClockFrequency(void)
 
     // 获取系统时钟源和频率
     uint32_t sysclk_freq = HAL_RCC_GetSysClockFreq();
-
+    
     LOG_DEBUG("System Clock Frequency: %lu Hz\n", sysclk_freq);
 }
 
@@ -172,6 +174,7 @@ static void Test_task(void *pvParameters)
     }
 }
 
+
 /**
  * @brief  CreateTask 任务创建函数
  * @param  task: 任务函数
@@ -183,8 +186,8 @@ static void Test_task(void *pvParameters)
  */
 static void CreateTask(TaskFunction_t task, const char *name, uint16_t stackSize, TaskHandle_t *taskHandle)
 {
-    size_t HeapSize_before = 0;
-    size_t HeapSize_after = 0;
+    size_t  HeapSize_before = 0;
+    size_t  HeapSize_after = 0;
 
     HeapSize_before = xPortGetFreeHeapSize();
     BaseType_t xReturned = xTaskCreate(task, name, stackSize, NULL, osPriorityNormal, taskHandle);

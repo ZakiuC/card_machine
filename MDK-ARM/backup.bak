@@ -1,0 +1,27 @@
+void WorkModeSwitch(void)
+{
+    KeyState_e last_opto_launch_key = KEY_IDLE;
+    KeyState_e last_opto_rotate_key = KEY_IDLE;
+    uint16_t cards = 0;
+
+    switch (console.main_menu.launchMode)
+    {
+    case NO_LAUNCH:
+        outMotorStop(&motor[OUTMOTOR]);
+        rotateMotorStop(&motor[ROTATEMOTOR]);
+        break;
+
+    case NORMAL_LAUNCH:
+        break;
+
+    case RANDOM_LAUNCH:
+        break;
+
+    case TEST_LAUNCH:
+        RotatePos(3);
+        console.main_menu.launchMode = NO_LAUNCH;
+        break;
+    default:
+        break;
+    }
+}

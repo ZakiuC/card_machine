@@ -1,26 +1,47 @@
 #ifndef __LOG_H_
 #define __LOG_H_
 #include "SEGGER_RTT.h"
+#include "stdarg.h"
+
 
 // 定义日志级别
-#define LOG_LEVEL_NONE  0
-#define LOG_LEVEL_ERROR 1
-#define LOG_LEVEL_WARN  2
-#define LOG_LEVEL_INFO  3
-#define LOG_LEVEL_DEBUG 4
+typedef enum {
+    LOG_LEVEL_NONE = 0,
+    LOG_LEVEL_ERROR,
+    LOG_LEVEL_WARN,
+    LOG_LEVEL_INFO,
+    LOG_LEVEL_DEBUG
+} LogLevel;
 
 // 设置当前日志级别
-#define CURRENT_LOG_LEVEL LOG_LEVEL_DEBUG
+static const LogLevel CURRENT_LOG_LEVEL = LOG_LEVEL_DEBUG;
 
-// 直接调用SEGGER_RTT_printf并根据日志级别判断是否输出
-#define LOG_PRINT(level, type, color, format, ...) \
-    do { \
-        if (level <= CURRENT_LOG_LEVEL) { \
-            SEGGER_RTT_printf(0, "%s%s" format "%s", color, type, ##__VA_ARGS__, RTT_CTRL_RESET); \
-        } \
-    } while (0)
+/**
+ * @brief 日志打印函数
+ * @param level 日志级别
+ * @param type 日志类型
+ * @param color 日志颜色
+ * @param format 日志格式
+*/
+static inline void LOG_PRINT(LogLevel level, const char* type, const char* color, const char* format, ...) {
+    if (level <= CURRENT_LOG_LEVEL) {
+        va_list args;
+        va_start(args, format);
+        SEGGER_RTT_printf(0, "%s%s", color, type);
+        SEGGER_RTT_vprintf(0, format, &args); // 修改此处，传递args的地址
+        SEGGER_RTT_printf(0, "%s", RTT_CTRL_RESET);
+        va_end(args);
+    }
+}
 
-#define LOG_CLEAR() if (LOG_LEVEL_DEBUG <= CURRENT_LOG_LEVEL) { SEGGER_RTT_WriteString(0, RTT_CTRL_CLEAR); }
+/**
+ * @brief 清空日志
+*/
+static inline void LOG_CLEAR() {
+    if (LOG_LEVEL_DEBUG <= CURRENT_LOG_LEVEL) {
+        SEGGER_RTT_WriteString(0, RTT_CTRL_CLEAR);
+    }
+}
 
 #define LOG(format, ...) LOG_PRINT(LOG_LEVEL_INFO, "", RTT_CTRL_TEXT_BRIGHT_WHITE, format, ##__VA_ARGS__)
 #define LOG_INFO(format, ...) LOG_PRINT(LOG_LEVEL_INFO, "LOG: ", RTT_CTRL_TEXT_BRIGHT_WHITE, format, ##__VA_ARGS__)

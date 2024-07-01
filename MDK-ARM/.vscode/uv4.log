@@ -11,7 +11,7 @@ Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash
 * JLink Info: InitTarget() start
 * JLink Info: SWD selected. Executing JTAG -> SWD switching sequence.
 * JLink Info: DAP initialized successfully.
-* JLink Info: InitTarget() end - Took 13.7ms
+* JLink Info: InitTarget() end - Took 9.49ms
 * JLink Info: Found SW-DP with ID 0x0BC11477
 * JLink Info: DPIDR: 0x0BC11477
 * JLink Info: CoreSight SoC-400 or earlier
@@ -38,8 +38,8 @@ ROMTableAddr = 0xF0000000
 Target info:
 ------------
 Device: STM32G030K6Tx
-VTarget = 3.301V
-State of Pins: TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+VTarget = 3.016V
+State of Pins: TCK: 0, TDI: 1, TDO: 1, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 4
 Software-Breakpoints: 8192
 Watchpoints:          2
@@ -52,5 +52,5 @@ Erase Done.Programming Done.Verify OK.* JLink Info: Memory map 'before startup c
 * JLink Info: Memory map 'after startup completion point' is active
 Application running ...
 * JLink Info: OnDisconnectTarget() start
-* JLink Info: OnDisconnectTarget() end - Took 854us
-Flash Load finished at 17:36:39
+* JLink Info: OnDisconnectTarget() end - Took 537us
+Flash Load finished at 09:04:00
